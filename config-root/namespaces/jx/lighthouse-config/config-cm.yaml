@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - rajatgupta24/jx-kubernetes-cluster
-      target_url: http://lighthouse.jx./merge/status
+      target_url: http://lighthouse.jx.192.168.29.42.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

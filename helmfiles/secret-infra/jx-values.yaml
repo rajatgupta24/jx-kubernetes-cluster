@@ -38,7 +38,7 @@ jxRequirements:
     repository: jx-kubernetes-cluster
   - key: staging
   ingress:
-    domain: change.me
+    domain: 192.168.29.42.nip.io
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .secret-infra.
@@ -47,6 +47,7 @@ jxRequirements:
       enabled: false
       production: false
   pipelineUser:
+    email: rajat2411gupta@gmail.com
     username: rajatgupta24
   repository: bucketrepo
   secretStorage: vault
