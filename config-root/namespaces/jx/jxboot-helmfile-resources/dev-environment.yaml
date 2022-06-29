@@ -30,5 +30,5 @@ spec:
     gitServer: https://github.com
     kubeProvider: "kubernetes"
     pipelineUsername: "rajatgupta24"
-    pipelineUserEmail: "jenkins-x@googlegroups.com"
+    pipelineUserEmail: "rajat2411gupta@gmail.com"
     prowConfig: Scheduler
