@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: rajatgupta24
+    provider: github
+    repository: quickstart-004
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: rajatgupta24-quickstart-004
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/rajatgupta24/quickstart-004.git
+  org: rajatgupta24
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: quickstart-004
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/rajatgupta24/quickstart-004

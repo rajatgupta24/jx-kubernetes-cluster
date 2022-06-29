@@ -6,6 +6,10 @@ data:
       repos:
       - rajatgupta24/jx-kubernetes-cluster
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - rajatgupta24/quickstart-004
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +25,11 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      rajatgupta24/quickstart-004:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +37,22 @@ data:
     plugins:
       rajatgupta24/jx-kubernetes-cluster:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      rajatgupta24/quickstart-004:
       - approve
       - assign
       - blunderbuss
@@ -55,6 +80,11 @@ data:
     - repos:
       - rajatgupta24/jx-kubernetes-cluster
       trusted_org: todo
+    - repos:
+      - rajatgupta24/quickstart-004
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
